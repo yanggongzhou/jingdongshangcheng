@@ -583,6 +583,8 @@ ul{list-style:none;}
     line-height: 60px;
     margin-right: 2px;
     background-color: black;
+    text-decoration:line-through ;
+    text-decoration-color: red;
 }
 .jdms-time p{
     float: left;
@@ -614,6 +616,8 @@ ul{list-style:none;}
 }
 .pccost li:nth-child(2){
     color: #999999;
+    text-decoration: line-through;
+    text-decoration-color: #999;
 }
 .jdms .flexslider-one{
     width: 797px;
@@ -904,4 +908,82 @@ footer{
 .left-msg:hover >.left-msg-img2{
     left: -3px;
     transition: left 1s;
+}
+
+/*登录页面*/
+.login-header{
+    width: 1000px;
+    margin: auto;
+    margin-top: 15px;
+}
+.noquestionnaire span{
+    font-size: 25px;
+    color: #000000ad;
+    position: relative;
+    top: -10px;
+    left: 36px;
+}
+.questionnaire{
+    margin-top: 43px;
+}
+.questionnaire:hover{
+    cursor: pointer;
+    color: #b61d1d;
+    text-decoration: underline;
+}
+.content1{
+    background-color: #fff8f0;
+    height: 40px;
+}
+.content1 p{
+    text-align: center;
+    line-height: 40px;
+}
+.content1 p b{
+    color: black;
+}
+.content1 p b:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.tb{
+    background-image:url(../img/login2.png);
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    position: relative;
+    top: 4px;
+}
+.foot-bottom{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.content2{
+    background-color: #134BA8;
+    margin-bottom: 20px;
+}
+.content2-1{
+    width: 1050px;
+    margin: auto;
+}
+.content2-2{
+    width: 330px;
+    border: 1px solid gray;
+}
+.tab1{
+    font-size: 20px;
+    color: black;
+    padding: 15px 0;
+    border-bottom: 1px solid #8080803b;
+}
+.tab1 span{
+    padding: 0 40px;
+}
+.tab1 span:hover{
+    font-weight: bolder;
+    cursor: pointer;
+    color: #b61d1d;
+}
+.tab1 span:nth-child(1){
+    border-right:1px solid #8080803b;
 }
