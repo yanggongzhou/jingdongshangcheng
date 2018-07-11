@@ -961,6 +961,7 @@ footer{
 .content2{
     background-color: #134BA8;
     margin-bottom: 20px;
+    height: 475px;
 }
 .content2-1{
     width: 1050px;
@@ -968,7 +969,10 @@ footer{
 }
 .content2-2{
     width: 330px;
-    border: 1px solid gray;
+    position: absolute;
+    top: 135px;
+    right: 300px;
+    background-color: white;
 }
 .tab1{
     font-size: 20px;
@@ -986,4 +990,115 @@ footer{
 }
 .tab1 span:nth-child(1){
     border-right:1px solid #8080803b;
+}
+
+.tab2-sj{
+    display:none;
+    width: 137px;
+    padding-left: 10px;
+}
+.tab2-ewm{
+    padding: 10px;
+    border: 1px solid #8080803b;
+    width: 135px;
+    margin-left: 73px;
+}
+.tab2:hover>.tab2-ewm{
+    cursor: pointer;
+    margin-left: 0;
+    transition:0.5s;
+}
+.tab2:hover>.tab2-sj{
+    display: inline;
+    transition-delay: all 0.6s;
+}
+.tab2{
+    margin: 20px 10px;
+    height: 161px;
+    overflow: hidden;
+}
+.tab3{
+    padding-bottom: 25px;
+}
+.tab3 p{
+    font: 12px/150% Arial,Verdana,"\5b8b\4f53";
+    color: #666;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.tab3 p b{
+    cursor: pointer;
+    color: #b61d1d;
+}
+.tab3 ul{
+    width: 240px;
+    margin: auto;
+}
+.tab3 ul li{
+    line-height: 29px;
+}
+.tab3 ul li i{
+    display: inline-block;
+    background-image: url(../img/3.png);
+    width: 25px;
+    height: 25px;
+    margin: 0px 5px 0 18px;
+    position: relative;
+    top:5px;
+}
+.tab3 ul li:nth-child(2) i{
+    background-position: 53px;
+}
+.tab3 ul li:nth-child(3) i{
+    background-position: 106px;
+}
+.tab4{
+    font: 12px/150% Arial,Verdana,"\5b8b\4f53";
+    color: #666;
+    padding: 20px 15px;
+    border-top: 1px solid #8080803b;
+}
+.tab4 span i{
+    display: inline-block;
+    background-image: url(../img/4.png);
+    width: 20px;
+    height: 18px;
+    position: relative;
+    top:3px;
+}
+.wechat{
+    background-position: 20px;
+}
+.tab4 b{
+    color: #cccccc;
+}
+.tab4 span{
+    padding:0 5px;
+}
+.tab4 span:hover{
+    color: #b61d1d;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.ljzc{
+    font-size: 14px;
+    color: #b61d1d;
+}
+.ljzc em{
+    background-image: url(../img/5.png);
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-position: 18px 101px;
+    position: relative;
+    top:4px
+}
+.tab5 label{
+    display: inline-block;
+    background-image: url(../img/5.png);
+    width: 38px;
+    height: 38px;
+}
+.tab5 label:nth-child(1){
+     
 }
