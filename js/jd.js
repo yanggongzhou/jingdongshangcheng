@@ -160,4 +160,30 @@ $(function () {
          }
      },1000);
 
+     // 登录页面的扫码或账号登录
+    $("#login-ewm").click(function () {
+        $("#login-ewm").css( {"font-weight":"bolder","cursor": "pointer",
+        "color":"#b61d1d"});
+        $("#login-userword").removeAttr("style");
+        $(".tab2").show();
+        $(".tab3").show();
+        $(".tab5").hide();
+
+    });
+    $("#login-userword").click(function () {
+        $("#login-userword").css( {"font-weight":"bolder","cursor": "pointer",
+            "color":"#b61d1d"});
+        $("#login-ewm").removeAttr("style");
+        $(".tab5").show();
+        $(".tab2").hide();
+        $(".tab3").hide();
+    });
+    $("#wechat").click(function () {
+        $(".wx-ewm").show();
+    });
+    $("#wx-ewm-del").click(function(){
+        $(".wx-ewm").hide();
+    });
+
+    //注册，忘记密码
 });

@@ -1093,12 +1093,106 @@ footer{
     position: relative;
     top:4px
 }
+.tab5{
+    padding: 20px 20px 30px;
+    display: none;
+}
 .tab5 label{
     display: inline-block;
     background-image: url(../img/5.png);
     width: 38px;
     height: 38px;
+    margin-top: 20px;
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    border-top: 1px solid;
 }
-.tab5 label:nth-child(1){
-     
+.tab5-label2{
+    background-position: 73px 0;
+}
+.tab5 input{
+    width: 228px;
+    height: 36px;
+    position: relative;
+    padding-left: 15px;
+}
+.usermsg{
+    top: -16px;
+    right: 4px;
+}
+.passwordmsg{
+    top: -15px;
+    right: 4px;
+}
+.forgetpassword{
+    color: #28271c;
+}
+.forgetpassword:hover{
+    color: #b61d1d;
+    text-decoration: underline;
+    cursor:pointer;
+}
+.tab5 button{
+    width: 286px;
+    height: 40px;
+    font-size: 21px;
+    background-color: #e4393c;
+    color:white;
+    border: none;
+    margin-top: 29px;
+}
+.wx-ewm{
+    position: absolute;
+    top: 39px;
+    left: 400px;
+    background: black;
+    display: none;
+}
+.wx-ewm h2{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+}
+.wx-ewm2{
+    background-color: gray;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    margin: 20px 88px 30px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px seashell;
+}
+.wx-ewm i{
+    display: inline-block;
+    width: 25px;
+    height: 28px;
+    background-image: url(../img/5.png);
+    position: relative;
+    left: 100px;
+    top: -8px;
+    background-position: -18px 37px;
+}
+/*注册、找回密码页面*/
+.nr-login{
+    border: 1px solid #cccccc;
+    background-color: #b61d1d;
+    padding: 20px 0;
+}
+.nr-login>.content2-2{
+    position: static;
+    margin: auto;
+    background-color: white;
+}
+.tab5-label3{
+    background-position:72px -96px;
+}
+.passwordmsg2{
+    top:-16px;
+}
+.tab1-login{
+    text-align: center;
+}
+.tab5-login{
+
 }
