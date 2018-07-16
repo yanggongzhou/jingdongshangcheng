@@ -1199,7 +1199,10 @@ footer{
 }
 /*购物车*/
 .shopcar-nr{
-    width: 990px;
-    margin: auto;
+
+}
+.zhong{
     background-color:white;
+    margin: auto;
+    width: 990px;
 }
