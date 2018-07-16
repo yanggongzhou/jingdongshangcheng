@@ -1193,6 +1193,13 @@ footer{
 .tab1-login{
     text-align: center;
 }
-.tab5-login{
-
+.tab5 p{
+    color: #b61d1d;
+    visibility: hidden;
+}
+/*购物车*/
+.shopcar-nr{
+    width: 990px;
+    margin: auto;
+    background-color:white;
 }

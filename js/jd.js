@@ -186,4 +186,21 @@ $(function () {
     });
 
     //注册，忘记密码
+    $("#zc-commit").click(function () {
+        if($("#zh").val()==""){
+           $("#zc-zh").css("visibility","visible");
+        }else if($("#mm").val()==""){
+            $("#zc-zh").removeAttr("style");
+            $("#zc-mm").css("visibility","visible");
+        }else if($("#mm-again").val()!=$("#mm").val()){
+            $("#zc-again").css("visibility","visible");
+            $("#zc-zh").removeAttr("style");
+            $("#zc-mm").removeAttr("style");
+        }else {
+            $("#zc-again").removeAttr("style")
+            alert("注册成功");
+        };
+
+    });
+
 });
