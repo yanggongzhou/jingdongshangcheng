@@ -186,21 +186,95 @@ $(function () {
     });
 
     //注册，忘记密码
+    function GetQueryString(name)//获取id
+    {
+        var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if(r!=null)return  unescape(r[2]); return null;
+    }
+    var id=GetQueryString("objectId");
+
     $("#zc-commit").click(function () {
-        if($("#zh").val()==""){
+        //注册验证
+        var myAccount = $("#zh").val();
+        var myPassword = $("#mm").val();
+        var myPasswordAgain = $("#mm-again").val();
+        var accountInfoimation = {account: myAccount, password1:myPassword};
+        //上行代码注意点是不要用过敏单词来命名常规变量，如password
+        console.log(accountInfoimation);
+        var msg = JSON.stringify(accountInfoimation);
+        var settings = {//ajax条件
+            "async": true,
+            "crossDomain": true,
+            "url": "https://leancloud.cn/1.1/classes/Post",
+            "method":"POST",
+            "headers": {
+                "x-lc-id": "CiHr9Qq9lBIjQ37TGpFmlKUR-gzGzoHsz",
+                "x-lc-key": "DJFhjkC4gxQQNIoqpKdIuzqs",
+                "content-type": "application/json"
+            },
+            "processData": false,
+            "data":msg
+        };
+        console.log(msg);
+        if(myAccount==""){
            $("#zc-zh").css("visibility","visible");
-        }else if($("#mm").val()==""){
+        }else if(myPassword ==""){
             $("#zc-zh").removeAttr("style");
             $("#zc-mm").css("visibility","visible");
-        }else if($("#mm-again").val()!=$("#mm").val()){
+        }else if(myPasswordAgain!= myPassword){
             $("#zc-again").css("visibility","visible");
             $("#zc-zh").removeAttr("style");
             $("#zc-mm").removeAttr("style");
         }else {
             $("#zc-again").removeAttr("style")
-            alert("注册成功");
+            // alert("注册成功");
+        };
+        $(this).attr('disabled', 'disabled');//鼠标点击一次后失效
+        $.ajax(settings).done(function (response) {
+             location.href = "jd-login.html"
+        }).fail(function (err) {
+            alert(err);
+            console.log(err);
+        })
+    });
+    //账号密码登录
+    $("#logincheck").click(function () {
+        //验证
+        var usermsg= $(".usermsg").val();
+        var passwordmsg = $(".passwordmsg").val();
+        if(usermsg==""){
+            alert("请输入账号");
+        }else if(passwordmsg==""){
+            alert("请输入密码")
+        }
+        var settings = {
+            "async": true,
+            "crossDomain": true,
+            "url": "https://leancloud.cn/1.1/classes/Post",
+            "method": "GET",
+            "headers": {
+                "x-lc-id": "CiHr9Qq9lBIjQ37TGpFmlKUR-gzGzoHsz",
+                "x-lc-key": "DJFhjkC4gxQQNIoqpKdIuzqs"
+            }
         };
 
-    });
+        $.ajax(settings).done(function(res){
+            console.log(res.results[2].account);
+                var a=res.results;
+                for(var j = 0;j < a.length;j++ ){//这类判断要由服务器来处理
+                    if(a[j].account==undefined){
 
+                    }else if(a[j].account!=usermsg){
+
+                    }else if(a[j].password1!=passwordmsg){
+                        alert("密码错误");
+                    }else{
+                        location.href="shop-car.html";
+                    };
+                }
+        }).fail(function (err) {
+            console.log(err);
+        })
+    });
 });
