@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>购物车</title>
+    <link rel="stylesheet" type="text/css" href="../flexslider.css" />
+    <style type="text/css">
+        h3{height:42px; line-height:42px; font-size:16px; font-weight:normal; text-align:center}
+        h3 a{margin:10px}h3 a.cur{color:#f30}
+    </style>
     <link rel="stylesheet" href="../css/jd.css"/>
 </head>
 <body style="background-color: white">
@@ -285,36 +290,388 @@
         </div>
     </div>
 </header>
-<div class="zhong">
+<div class="zhong1">
     <div class="shopcar-nr clearfix">
         <div class="logo-search clearfix left">
             <div class="left noquestionnaire">
-                <img title="京东，欢迎登录" alt="京东" src="../img/login1.png"/>
-                <span>购物车</span>
+                <img class="xj2" title="京东，欢迎登录" alt="京东" src="../img/login1.png"/>
+                <span class="xj1">购物车</span>
             </div>
         </div>
-        <div class="right">
-            <input type="text"/><label>搜索</label>
+        <div class="right logo-search2">
+            <input type="text" placeholder="自营"/><label>搜索</label>
         </div>
 
     </div>
-    <div>
-        <img/>
+    <div class="zhong2">
+        <img title="w" alt=" "/>
         <span>您还没有登录！登录后购物车的商品将保存到您账号中 </span>
         <a href="jd-login.html">立即登录</a>
     </div>
-    <div>全部商品</div>
-    <!--js要点-->
-    <div>
-        配送至：<span>北京朝阳区三环以内</span>
-        <div>
-            <div>
-                <span>北京市</span>
-                <span>朝阳区</span>
-                <span>三环以内</span>
-            </div>
-
+    <div class="clearfix">
+        <div class="left">
+            <span>全部商品</span>
+            <b>2</b>
+            <span>京东大药房</span>
         </div>
+        <!--js要点-->
+        <div class="right">
+            配送至：<span>北京朝阳区三环以内</span>
+            <div>
+                <div>
+                    <span>北京市</span>
+                    <span>朝阳区</span>
+                    <span>三环以内</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div>
+    <!--商品选择    -->
+        <div class="zhong2 zhong4">
+            <div class="zhong4-one left">
+                <input type="checkbox" name="quanxuan"/>
+                <span style="margin: 0 3px">全选</span>
+                <span>商品</span>
+            </div>
+            <div class="zhong4-one right zhong4-two">
+                <span>小计</span>
+                <span>操作</span>
+            </div>
+            <div class="zhong4-one right">
+                <span>单价</span>
+                <span>数量</span>
+            </div>
+        </div>
+        <div class="sp-example">
+            <div class="shangpin1">
+                <input name="" type="checkbox"/>
+                <span class="jingdongziying">京东自营</span>
+            </div>
+            <div class="shangpin-box">
+                <div class="shangpin2">
+                    <input type="checkbox"/>
+                    <span>满赠</span>
+                    <span>活动商品购满¥39.90，即可领取赠品1件>></span>
+                    <a class="jingdongziying">查看赠品</a>
+                    <span>去凑单>></span>
+                </div>
+                <div class="clearfix shangpin3">
+                    <img class="left kxt1" src="../img/22.jpg"/>
+                    <div class="left kxt2">
+                        <div class="kxt2-1">
+                            <a class="jingdongziying">京东超市</a>
+                            <span>绿箭（DOUBLEMINT）无糖薄荷糖原味薄荷味35粒23.8g单盒金属装（新旧包装随机发）</span>
+                        </div>
+
+                        <div>
+                            <p>不支持7天无理由退货</p>
+                            <p>选包装</p>
+                        </div>
+                    </div>
+                    <div class="left">
+                        颜色：原味薄荷味
+                    </div>
+                    <div class="left kxt3">
+                        <p>￥7.50</p>
+                        <span class="kxt3-cx">促销></span>
+                    </div>
+                    <div class="left kxt4">
+                        <label class="kxt4-1">-</label>
+                        <input type="text"/>
+                        <label class="kxt4-1 kxt4-2">+</label>
+                        <p>有货</p>
+                    </div>
+                    <h3 class="left kxt5">
+                        ￥7.50
+                    </h3>
+                    <ul class="right kxt6">
+                        <li>删除</li>
+                        <li>移到我的关注</li>
+                        <li>加到我的关注</li>
+                    </ul>
+                </div>
+                <p class="sg">【闪购】2018-07-26 10:00 恢复原价</p>
+            </div>
+        </div>
+        <div class="sp-example">
+            <div class="shangpin1">
+                <input name="" type="checkbox"/>
+                <span class="jingdongziying">京东自营</span>
+            </div>
+            <div class="shangpin-box">
+                <div class="shangpin2">
+                    <input type="checkbox"/>
+                    <span>满赠</span>
+                    <span>活动商品购满¥39.90，即可领取赠品1件>></span>
+                    <a class="jingdongziying">查看赠品</a>
+                    <span>去凑单>></span>
+                </div>
+                <div class="clearfix shangpin3">
+                    <img class="left kxt1" src="../img/22.jpg"/>
+                    <div class="left kxt2">
+                        <div class="kxt2-1">
+                            <a class="jingdongziying">京东超市</a>
+                            <span>绿箭（DOUBLEMINT）无糖薄荷糖原味薄荷味35粒23.8g单盒金属装（新旧包装随机发）</span>
+                        </div>
+
+                        <div>
+                            <p>不支持7天无理由退货</p>
+                            <p>选包装</p>
+                        </div>
+                    </div>
+                    <div class="left">
+                        颜色：原味薄荷味
+                    </div>
+                    <div class="left kxt3">
+                        <p>￥7.50</p>
+                        <span class="kxt3-cx">促销></span>
+                    </div>
+                    <div class="left kxt4">
+                        <label class="kxt4-1">-</label>
+                        <input type="text"/>
+                        <label class="kxt4-1 kxt4-2">+</label>
+                        <p>有货</p>
+                    </div>
+                    <h3 class="left kxt5">
+                        ￥7.50
+                    </h3>
+                    <ul class="right kxt6">
+                        <li>删除</li>
+                        <li>移到我的关注</li>
+                        <li>加到我的关注</li>
+                    </ul>
+                </div>
+                <p class="sg">【闪购】2018-07-26 10:00 恢复原价</p>
+            </div>
+        </div>
+        <div class="zhong5 clearfix">
+            <div class="zhong5-1 left">
+                <input type="checkbox"/><label>全选</label>
+                <span>删除选中商品</span>
+                <span>移到我的关注</span>
+                <span><b>清理购物车</b></span>
+            </div>
+            <div class="zhong5-2 right">
+                <span class="js1">已选择<b>2</b>件商品</span>
+                <span class="js2">已节省：<b>-￥0.00</b></span>
+                <span class="js3">总价：<b>￥17.50</b></span>
+                <button>去结算</button>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="zhong6">
+            <span>猜你喜欢</span>
+            <span>随手购</span>
+            <span>我的关注</span>
+        </div>
+        <div class="flexslider slides-sxg">
+            <ul class="slides">
+                <li><div class="clearfix">
+                    <div class="clearfix sxg left">
+                        <div class="left sxg-1">
+                            <img src="../img/23.jpg"/>
+                            <br/>
+                            <span>
+                启迈斯 X6跑步机 家用 折叠静音电动升降健身器材 5吋蓝屏单功能
+                </span>
+                            <br/>
+                            <span>￥2149.00</span>
+                        </div>
+                        <button class="jrgwc">加入购物车</button>
+                    </div>
+                    <div class="clearfix sxg left">
+                        <div class="left sxg-1">
+                            <img src="../img/23.jpg"/>
+                            <br/>
+                            <span>
+                启迈斯 X6跑步机 家用 折叠静音电动升降健身器材 5吋蓝屏单功能
+                </span>
+                            <br/>
+                            <span>￥2149.00</span>
+                        </div>
+                        <button class="jrgwc">加入购物车</button>
+                    </div>
+                    <div class="clearfix sxg left">
+                        <div class="left sxg-1">
+                            <img src="../img/23.jpg"/>
+                            <br/>
+                            <span>
+                启迈斯 X6跑步机 家用 折叠静音电动升降健身器材 5吋蓝屏单功能
+                </span>
+                            <br/>
+                            <span>￥2149.00</span>
+                        </div>
+                        <button class="jrgwc">加入购物车</button>
+                    </div>
+                    <div class="clearfix sxg sxg2 left">
+                        <div class="left sxg-1">
+                            <img src="../img/23.jpg"/>
+                            <br/>
+                            <span>
+                启迈斯 X6跑步机 家用 折叠静音电动升降健身器材 5吋蓝屏单功能
+                </span>
+                            <br/>
+                            <span>￥2149.00</span>
+                        </div>
+                        <button class="jrgwc">加入购物车</button>
+                    </div>
+                </div></li>
+                <li><div class="clearfix">
+                    <div class="clearfix sxg left">
+                        <div class="left sxg-1">
+                            <img src="../img/24.jpg"/>
+                            <br/>
+                            <span>
+                启迈斯 X6跑步机 家用 折叠静音电动升降健身器材 5吋蓝屏单功能
+                </span>
+                            <br/>
+                            <span>￥2149.00</span>
+                        </div>
+                        <button class="jrgwc">加入购物车</button>
+                    </div>
+                    <div class="clearfix sxg left">
+                        <div class="left sxg-1">
+                            <img src="../img/24.jpg"/>
+                            <br/>
+                            <span>
+                启迈斯 X6跑步机 家用 折叠静音电动升降健身器材 5吋蓝屏单功能
+                </span>
+                            <br/>
+                            <span>￥2149.00</span>
+                        </div>
+                        <button class="jrgwc">加入购物车</button>
+                    </div>
+                    <div class="clearfix sxg left">
+                        <div class="left sxg-1">
+                            <img src="../img/24.jpg"/>
+                            <br/>
+                            <span>
+                启迈斯 X6跑步机 家用 折叠静音电动升降健身器材 5吋蓝屏单功能
+                </span>
+                            <br/>
+                            <span>￥2149.00</span>
+                        </div>
+                        <button class="jrgwc">加入购物车</button>
+                    </div>
+                    <div class="clearfix sxg sxg2 left">
+                        <div class="left sxg-1">
+                            <img src="../img/24.jpg"/>
+                            <br/>
+                            <span>
+                启迈斯 X6跑步机 家用 折叠静音电动升降健身器材 5吋蓝屏单功能
+                </span>
+                            <br/>
+                            <span>￥2149.00</span>
+                        </div>
+                        <button class="jrgwc">加入购物车</button>
+                    </div>
+                </div></li>
+                <li><div class="clearfix">
+                    <div class="clearfix sxg left">
+                        <div class="left sxg-1">
+                            <img src="../img/25.jpg"/>
+                            <br/>
+                            <span>
+                启迈斯 X6跑步机 家用 折叠静音电动升降健身器材 5吋蓝屏单功能
+                </span>
+                            <br/>
+                            <span>￥2149.00</span>
+                        </div>
+                        <button class="jrgwc">加入购物车</button>
+                    </div>
+                    <div class="clearfix sxg left">
+                        <div class="left sxg-1">
+                            <img src="../img/25.jpg"/>
+                            <br/>
+                            <span>
+                启迈斯 X6跑步机 家用 折叠静音电动升降健身器材 5吋蓝屏单功能
+                </span>
+                            <br/>
+                            <span>￥2149.00</span>
+                        </div>
+                        <button class="jrgwc">加入购物车</button>
+                    </div>
+                    <div class="clearfix sxg left">
+                        <div class="left sxg-1">
+                            <img src="../img/25.jpg"/>
+                            <br/>
+                            <span>
+                启迈斯 X6跑步机 家用 折叠静音电动升降健身器材 5吋蓝屏单功能
+                </span>
+                            <br/>
+                            <span>￥2149.00</span>
+                        </div>
+                        <button class="jrgwc">加入购物车</button>
+                    </div>
+                    <div class="clearfix sxg sxg2 left">
+                        <div class="left sxg-1">
+                            <img src="../img/25.jpg"/>
+                            <br/>
+                            <span>
+                启迈斯 X6跑步机 家用 折叠静音电动升降健身器材 5吋蓝屏单功能
+                </span>
+                            <br/>
+                            <span>￥2149.00</span>
+                        </div>
+                        <button class="jrgwc">加入购物车</button>
+                    </div>
+                </div></li>
+                <li><div class="clearfix">
+                    <div class="clearfix sxg left">
+                        <div class="left sxg-1">
+                            <img src="../img/22.jpg"/>
+                            <br/>
+                            <span>
+                启迈斯 X6跑步机 家用 折叠静音电动升降健身器材 5吋蓝屏单功能
+                </span>
+                            <br/>
+                            <span>￥2149.00</span>
+                        </div>
+                        <button class="jrgwc">加入购物车</button>
+                    </div>
+                    <div class="clearfix sxg left">
+                        <div class="left sxg-1">
+                            <img src="../img/22.jpg"/>
+                            <br/>
+                            <span>
+                启迈斯 X6跑步机 家用 折叠静音电动升降健身器材 5吋蓝屏单功能
+                </span>
+                            <br/>
+                            <span>￥2149.00</span>
+                        </div>
+                        <button class="jrgwc">加入购物车</button>
+                    </div>
+                    <div class="clearfix sxg left">
+                        <div class="left sxg-1">
+                            <img src="../img/22.jpg"/>
+                            <br/>
+                            <span>
+                启迈斯 X6跑步机 家用 折叠静音电动升降健身器材 5吋蓝屏单功能
+                </span>
+                            <br/>
+                            <span>￥2149.00</span>
+                        </div>
+                        <button class="jrgwc">加入购物车</button>
+                    </div>
+                    <div class="clearfix sxg sxg2 left">
+                        <div class="left sxg-1">
+                            <img src="../img/22.jpg"/>
+                            <br/>
+                            <span>
+                启迈斯 X6跑步机 家用 折叠静音电动升降健身器材 5吋蓝屏单功能
+                </span>
+                            <br/>
+                            <span>￥2149.00</span>
+                        </div>
+                        <button class="jrgwc">加入购物车</button>
+                    </div>
+                </div></li>
+            </ul>
+        </div>
+
     </div>
 </div>
 <footer style="background-color: #eaeaea">
@@ -457,6 +814,16 @@
     </ul>
 </footer>
 <script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../jquery.flexslider-min.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $(".flexslider").flexslider({
+            slideshowSpeed: 4000, //展示时间间隔ms
+            animationSpeed: 400, //滚动时间ms
+            touch: true //是否支持触屏滑动
+        });
+    });
+</script>
 <script type="text/javascript" src="../js/jd.js"></script>
 </body>
 </html>

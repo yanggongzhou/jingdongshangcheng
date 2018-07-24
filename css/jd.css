@@ -1199,13 +1199,272 @@ footer{
 }
 /*购物车*/
 .shopcar-nr{
-
+    padding: 20px 0;
 }
-.zhong{
+.zhong1{
     background-color:white;
     margin: auto;
     width: 990px;
 }
 .tab5-login{
     display: block;
+}
+.logo-search2 input{
+    margin-top: 30px;
+    padding: 2px 2px 2px 10px;
+    width: 260px;
+    height: 22px;
+    border: 2px solid #e11717e3;
+}
+.logo-search2 label{
+    background-color: #e11717e3;
+    color: white;
+    display: inline-block;
+    width: 40px;
+    font-size: 15px;
+    padding: 3px 3px 3px 13px;
+    height: 24px;
+}
+.logo-search2 label:hover{
+    cursor:pointer;
+}
+.xj1{
+    font-size: 20px!important;
+    top: -2px!important ;
+    left: 28px !important;
+}
+.xj2{
+    width: 132px;
+}
+.zhong2{
+    background-color: #ffecd791;
+    color: red;
+    height: 42px;
+    line-height: 42px;
+    border: 1px solid #e3ba5a;
+    padding: 2px 20px;
+    margin: 20px 0;
+}
+.zhong2 img{
+    position: relative;
+    top: 5px;
+    margin-right: 6px;
+}
+.zhong2 a{
+    padding: 7px;
+    background: #df3131;
+    color: white;
+    border-radius: 6px;
+    margin-left: 15px;
+}
+.zhong2 a:hover{
+    background: #e54040;
+}
+.zhong4{
+    margin: 5px 0;
+    background-color: #f3f3f3;
+    border: 1px solid #e9e9e9;
+    color: #787575;
+}
+.zhong4-one input{
+    position: relative;
+    top: 2px;
+}
+.zhong4-one span{
+    margin: 0 30px;
+}
+.zhong4-two{
+    margin-left: 60px;
+}
+.shangpin1{
+    padding: 15px 0 5px;
+    border-bottom: 2px solid #80808096;
+    color: white;
+}
+.jingdongziying{
+    background-color: #df3131;
+    padding: 1px 3px;
+    border-radius: 2px;
+    color: white;
+}
+.jingdongziying:hover{
+    cursor: pointer;
+    color: white;
+}
+.shangpin-box{
+    border: 1px solid #8080803d;
+    border-top: none;
+    padding: 7px 0 7px 40px;
+    color: #514949;
+}
+.shangpin2{
+    padding-bottom: 7px;
+    border-bottom: 1px solid #8080803d;
+}
+.shangpin2 span:hover{
+    cursor: pointer;
+    color: #e33333;
+}
+.shangpin3{
+    padding: 15px 15px 15px 0;
+}
+.kxt1{
+    border: 1px solid #8080803d;
+}
+.kxt2{
+    width: 200px;
+    margin: 0 30px 0 10px;
+}
+.kxt2-1{
+    height: 40px;
+    display: inline-block;
+    overflow: hidden;
+}
+.kxt2-1 span:hover{
+    cursor: pointer;
+    color: #e33333;
+}
+.kxt3{
+    margin-left: 130px;
+}
+.kxt3-cx{
+    border: 1px solid #ff000066;
+    padding: 2px 5px 2px;
+    color: #ff0000db;
+}
+.kxt3-cx:hover{
+    cursor: pointer;
+}
+.kxt4{
+    text-align: center;
+    margin-left: 30px;
+}
+.kxt4 input{
+    width: 45px;
+    text-align: center;
+}
+.kxt4-1{
+    border: 1px solid #808080a3;
+    width: 15px;
+    display: inline-block;
+    position: relative;
+    left: 5px;
+    height: 17px;
+    top: 1px;
+    background-color: white;
+}
+.kxt4-2{
+    left:-5px;
+}
+.kxt4 label:hover{
+    cursor: pointer;
+}
+.kxt5{
+    margin-left: 65px;
+}
+.sg{
+    color: #e33333;
+}
+.kxt6 li:hover{
+    cursor: pointer;
+    color: #e33333;
+}
+.sp-example{
+    margin-bottom: 30px;
+}
+.zhong5{
+    height: 55px;
+    line-height: 55px;
+    border: 1px solid #80808057;
+    padding-left: 20px;
+    color: #000000a8;
+    margin-bottom: 30px;
+}
+.zhong5-1 input{
+    position: relative;
+    top: 2px;
+    left: -5px;
+}
+.zhong5-1 span{
+    margin-left: 5px;
+}
+.zhong5-1 span:hover{
+    cursor: pointer;
+    color: #e33333;
+}
+.zhong5-2 b{
+    color: #e33333;
+}
+.zhong5-2 button{
+    width: 110px;
+    height: 55px;
+    border: none;
+    position: relative;
+    left: 1px;
+    background-color: #e33333;
+    color: white;
+    font-size: 22px;
+}
+.zhong5-2 span{
+    margin-right: 10px;
+    position: relative;
+}
+.js3{
+    top: -14px;
+    left: -40px;
+}
+.js3 b{
+    font-size: 20px;
+}
+.js2{
+    top: 7px;
+    left: 64px;
+}
+.js1:hover{
+    cursor: pointer;
+    color: #e33333;
+}
+.sxg{
+    width: 206px;
+    text-align: center;
+    padding: 20px;
+    border: 1px dashed #cacaca;
+    border-right: none;
+}
+.sxg-1{
+    color: #333333;
+}
+.sxg-1 span{
+    margin:5px 0;
+    display: inline-block;
+}
+.jrgwc{
+    background-color: white;
+    border: 1px solid #999;
+    padding: 5px 25px;
+    color: #999;
+    border-radius: 4px;
+}
+.jrgwc:hover{
+    background-color: #e33333;
+    color: white;
+    border: 1px solid #e33333;
+}
+.sxg2{
+    border-right: 1px dashed #cacaca;
+}
+.slides-sxg{
+    box-shadow: none;
+}
+.zhong6{
+    height: 42px;
+    line-height: 42px;
+}
+.zhong6 span{
+    margin-left: 20px;
+}
+.zhong6 span:hover{
+    color: #e33333;
+    font-weight: 700;
+    border-bottom: 2px solid #e33333;
 }
