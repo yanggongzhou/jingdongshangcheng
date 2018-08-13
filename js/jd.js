@@ -20,7 +20,8 @@ $(function () {
     //我的京东
     $("#wdjd").mouseover(function(){
         $("#location3").show();
-        $("#wdjd").css("background-color","white");
+        $("#wdjd").css({"background-color":"white", "border-bottom":"none"});
+
     });
     function three(){
         $("#location3").hide();
@@ -29,7 +30,7 @@ $(function () {
     $("#wdjd").mouseleave(three);
     $("#location3").mouseover(function(){
         $("#location3").show();
-        $("#wdjd").css("background-color","white")
+        $("#wdjd").css({"background-color":"white", "border-bottom":"none"})
     }).mouseleave(three);
     //
     //企业采购
@@ -135,30 +136,6 @@ $(function () {
     // $('.link-commodity li').eq(0).hover(function () {
     //     $(".link-commodity-detail").show()
     // })
-
-    // 京东秒杀倒计时
-     setInterval(function () {
-         var sj = new Date();
-         var sjHour=23-sj.getHours();
-         var sjMin = 59-sj.getMinutes();
-         var sjSecond=59-sj.getSeconds();
-
-         if(sjHour>=10){
-             $("#jdms-hour").html(sjHour);
-         }else{
-             $("#jdms-hour").html("0"+sjHour);
-         }
-         if(sjMin>=10){
-             $("#jdms-min").html(sjMin);
-         }else{
-             $("#jdms-min").html("0"+sjMin);
-         }
-         if(sjSecond>=10){
-             $("#jdms-second").html(sjSecond);
-         }else{
-             $("#jdms-second").html("0"+sjSecond);
-         }
-     },1000);
 
      // 登录页面的扫码或账号登录
     $("#login-ewm").click(function () {
@@ -277,4 +254,18 @@ $(function () {
             console.log(err);
         })
     });
+
+    //购物车
+    //checked操作全选
+    var inputA = $("input[name='a']");
+    var inputQ = $(".quanxuan");
+    inputQ.click(function () {
+        if(inputQ.prop("checked")==true){
+            inputA.prop("checked",true);
+            inputA.prop("checked",true)
+        }else {
+            inputA.prop("checked",false)
+        }
+    })
+
 });

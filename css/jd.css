@@ -190,9 +190,10 @@ ul{list-style:none;}
     padding: 10px;
     position: absolute;
     top: 30px;
-    left: 750px;
+    left: 748px;
     z-index: 10;
     border: 1px solid whitesmoke;
+    border-top:none;
     display: none;
 }
 .location3-one{
